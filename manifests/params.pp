@@ -1,9 +1,9 @@
 # @summary A short summary of the purpose of this class
 #   Operating systen-related variables (and others)
 class apache::params {
-  $install_Ensure = 'present'
+  $install_ensure = 'present'
   case $::osfamily { 
-    'Redhat': {
+    'RedHat': {
       $install_name = 'httpd'
     }
     'Debian': {
